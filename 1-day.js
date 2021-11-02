@@ -4,29 +4,29 @@ function getArea(shape,a,b,c){
     switch (shape) {
         case 'rect':
             let rectArea=a*b;
-            saveExecutionSequence('rect',rectArea);
+            ExecutionSequence('rect',rectArea);
             break;
         case 'trapezoid':
             let trapezoidArea=(a+b)*c/2;
-            saveExecutionSequence('trapezoid',trapezoidArea);
+            ExecutionSequence('trapezoid',trapezoidArea);
             break;
         case 'circle':
             const pi=3.14;
             if(b===undefined){
                 let oneCircle=a*a*pi;
-                saveExecutionSequence('circle',oneCircle);
+                ExecutionSequence('circle',oneCircle);
             }else{
                 let sum=0;
                 for(let i=1; i<=b; i++){
                     let otherCircle=i*i*pi;
                     sum=sum+otherCircle;
                 }
-                saveExecutionSequence('circleSum',sum);
+                ExecutionSequence('circleSum',sum);
             }  
             break;    
     }   
 }
-function saveExecutionSequence(shape,outcome){
+function ExecutionSequence(shape,outcome){
     info.push(`${shape} = ${outcome}`);
 }
 
