@@ -7,7 +7,7 @@ function paintToDo(dataToDo){
     const span = document.createElement("span");
     span.innerText = dataToDo;
     const button = document.createElement("button");
-    button.innerText = "x";
+    button.innerText = "X";
     li.appendChild(span);
     li.appendChild(button);
     todoList.appendChild(li);
