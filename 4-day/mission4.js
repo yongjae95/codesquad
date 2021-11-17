@@ -1,4 +1,3 @@
-
 function bracketDepth(data){
 let array=[];
 let openBracket=0;
@@ -12,8 +11,6 @@ for(let i=0; i<dataSplit.length; i++){
     }else if(dataSplit[i]==="]"){
         array.pop();
         closeBracket+=1;
-    }else{
-        continue;
     }
 }
 if(openBracket===closeBracket){
@@ -29,6 +26,6 @@ function bracketElements(data){
     return data.length - result.length;
 }
 
-const data = "[1,2,[3,4,[5,[6]]]]";
+const data = "[1,[2],[3,4,[5,[6]]]]";
 console.log(`배열의 중첩된 깊이 수준은 ${bracketDepth(data)}이며 총 ${bracketElements(data)}개의 원소가 포함되어 있습니다.`);
 
