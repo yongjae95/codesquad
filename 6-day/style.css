@@ -1,10 +1,10 @@
-.todo-header{
-    background-color: black;
-    padding-left: 30px;
-    color: white;
+.todo-header {
+  background-color: black;
+  padding-left: 30px;
+  color: white;
 }
-.input-btn{
-    background-color: blue;
-    color: white;
-    border-radius: 25px;
+.input-btn {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
 }
